@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Ghost</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="play">PLAY</string>
+
+    <string name="namePlayerOnTurn">Name Player On Turn</string>
+    <string name="scorePlayerOnTurn">Score: ....</string>
+    <string name="lettersPlayerOnTurn">Letters: GHO..</string>
+    <string name="word">LET</string>
+    <string name="nameOtherPlayer">Name Other Player</string>
+    <string name="scoreOtherPlayer">Score: ....</string>
+    <string name="lettersOtherPlayer">Letters: G....</string>
+    <string name="OK">OK</string>
+
+</resources>
