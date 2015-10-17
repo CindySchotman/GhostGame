@@ -1,21 +1,48 @@
 <resources>
     <string name="app_name">Ghost</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_help">Game Rules</string>
+    <string name="title_activity_winner">End of game</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_highscore">High scores</string>
+    <string name="title_activity_start">startActivity</string>
 
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="play">PLAY</string>
+    <string name="OK">OK</string>
+    <string name="back">BACK</string>
+    <string name="resume">RESUME</string>
+    <string name="newGame">NEW GAME</string>
+    <string name="settings">SETTINGS</string>
+    <string name="help">GAME RULES</string>
+    <string name="Menu">MENU</string>
+    <string name="highScore">HIGHSCORE</string>
+
+    <string name="English">ENGLISH</string>
+    <string name="Nederlands">NEDERLANDS</string>
+
     <string name="action_settings">Settings</string>
     <string name="player1">Player 1</string>
     <string name="player2">Player 2</string>
-    <string name="play">PLAY</string>
+    <string name="arrow">V</string>
 
-    <string name="namePlayerOnTurn">Name Player On Turn</string>
-    <string name="scorePlayerOnTurn">Score: ....</string>
-    <string name="lettersPlayerOnTurn">Letters: GHO..</string>
-    <string name="word">LET</string>
-    <string name="nameOtherPlayer">Name Other Player</string>
-    <string name="scoreOtherPlayer">Score: ....</string>
-    <string name="lettersOtherPlayer">Letters: G....</string>
-    <string name="OK">OK</string>
+    <string name="word">WORD</string>
+    <string name="congrats">Congratulations</string>
+
+    <string name="welcome">Welcome to Ghost game!</string>
+    <string name="explanation">Ghost is a word game played by two players. The goal is to never form a complete word.\n
+    \nOne of the players begins the game by naming any letter of the alphabet. Then the players
+    continue adding letters with the aim avoiding being the one to complete a word. Each
+    fragment must be the beginning of an actual word. The player who completes a word (longer than
+    three letters) loses the round and gets a "letter" from the word "GHOST". When a player adds a
+    letter to the fragment and no word can be made of it anymore, that player loses the round and a
+    another letter from GHOST is added to his set of letters. When one of the players
+    completes the word "GHOST" that player loses the game.\n
+    \nThe player whose turn it is may - instead of adding a letter - challenge the
+    previous player to prove that the current fragment is actually the beginning of a word. If the
+    challenged player can name such a word, the challenger loses the round; otherwise the challenged
+    player loses the round. If a player bluffs, or completes a word without other players noticing,
+    then play continues. When a round ends, play generally passes to the left.\n
+    \n\nBron: \'https://en.wikipedia.org/wiki/Ghost_(game)\'</string>
 
 </resources>

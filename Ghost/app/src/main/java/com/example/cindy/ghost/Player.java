@@ -1,56 +1,45 @@
 package com.example.cindy.ghost;
 
+/** Cindy Schotman - 10595635 */
+
 public class Player {
 
     public String name;
     public String letters;
     public int score;
-    public int highscore;
+    public int highScore;
 
     {
         name = "";
-        letters = "";
+        letters = ".....";
         score = 0;
-        highscore = 0;
+        highScore = 0;
     }
 
     /** constructs a new empty Player */
-    public Player() {
-        // empty
-    }
+    public Player() {}
 
-    /** constructs a new Player with given name */
+    /** constructs a new Player with input name */
     public Player(String inputName) {
         name = inputName;
     }
 
-    /** resets the players game-data back to an initial state */
-    public void clear() {
-        letters = "";
-        score = 0;
-    }
-
-    public void setHighscore() {
-        if(score > highscore) {
-            highscore = score;
-        }
-    }
-
+    /** adds a letter of the word "GHOST" to the letters the player already has */
     public void addLetter() {
-        switch(letters.length()) {
-            case 0:
-                letters = "G";
+        switch(letters) {
+            case ".....":
+                letters = "G....";
                 break;
-            case 1:
-                letters = "GH";
+            case "G....":
+                letters = "GH...";
                 break;
-            case 2:
-                letters = "GHO";
+            case "GH...":
+                letters = "GHO..";
                 break;
-            case 3:
-                letters = "GHOS";
+            case "GHO..":
+                letters = "GHOS.";
                 break;
-            case 4:
+            case "GHOS.":
                 letters = "GHOST";
                 break;
             default:
@@ -59,11 +48,16 @@ public class Player {
         }
     }
 
-    public void updateScore() {
-        score += 1000;
+    /** calculates new score depending on the length of the formed word:
+      * 5*(length^2) + 10% of current score */
+    public void updateScore(int length) {
+        score += 5*((int)Math.pow(length, 2)) + (score * 1.10);
     }
 
-    public void changeName(String newName) {
-        name = newName;
+    /** sets score as high score when score is currently higher than the high score */
+    public void updateHighScore() {
+        if(score > highScore) {
+            highScore = score;
+        }
     }
 }
